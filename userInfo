@@ -1,8 +1,9 @@
 import socket,getpass
-user = getpass.getuser()
-ip_local = socket.gethostbyname(socket.gethostname())
-ip_host = socket.gethostbyname('www.google.com')
-
+try:
+  user = getpass.getuser()
+  ip_local = socket.gethostbyname(socket.gethostname())
+  ip_host = socket.gethostbyname('www.google.com')
+exept: pass
 print (user)
 print (ip_local)
 print (ip_host)
