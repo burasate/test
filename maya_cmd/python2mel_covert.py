@@ -8,6 +8,7 @@ def PythonToMel (file_path):
         text = i.replace('\n','\\n\\')
         text = text.replace('\"','\\"')
         mel_line.append(text)
+        mel_line.append('\\n\\')
     mel_line.append('\");')
 
     print ('\n'.join(mel_line))
