@@ -5,6 +5,8 @@ def PythonToMel (file_path):
     mel_line = []
     mel_line.append('python(\"\\n\\')
     for i in line_list:
+        text = i.replace('\n','\\n\\')
+        text = i.replace('\"','\\"')
         mel_line.append(i.replace('\n','\\n\\'))
     mel_line.append('\");')
 
