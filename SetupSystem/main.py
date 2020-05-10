@@ -1,2 +1,1 @@
-print('script loaded')
-import test
+print('Online script loaded')
