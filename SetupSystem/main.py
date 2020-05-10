@@ -17,6 +17,6 @@ mayaAppDir = mel.eval('getenv MAYA_APP_DIR')
 scriptsDir = mayaAppDir+os.sep+'scripts'
 userSetupFile = scriptsDir + os.sep + "userSetup.py" 
 
-print ('mayaAppDir = '+mayaAppDir)
-print ('scriptsDir = '+scriptsDir)
-print ('userSetupFile = '+userSetupFile)
+print ('mayaAppDir = '+formatPath(mayaAppDir))
+print ('scriptsDir = '+formatPath(scriptsDir))
+print ('userSetupFile = '+formatPath(userSetupFile))
