@@ -1,1 +1,1 @@
-print('Online Script Loaded')
+print('Online Script Loaded\n')
